@@ -1,0 +1,32 @@
+/**
+ * TematicaEnum.java
+ */
+package com.hbt.semillero.enums;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public enum TematicaEnum {
+	
+	AVENTURAS("com.tematica.aventuras"),
+	BELICO("com.tematica.belico"),
+	HUMORISTICO("com.tematica.humoristico"),
+	DEPORTIVO("com.tematica.deportivo"),
+	FANTASTICO("com.tematica.fantastico"),
+	CIENCIA_FICCION("com.tematica.cienciaFiccion"),
+	HISTORICO("com.tematica.historico"),
+	HORROR("com.tematica.horror"),
+
+	;
+	
+	
+	private String descripcion;
+	
+	TematicaEnum(String descripcion){
+		this.descripcion = descripcion;
+	}
+	
+}

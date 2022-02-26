@@ -1,0 +1,44 @@
+/**
+ * Avion.java
+ */
+package com.hbt.semillero.dto;
+
+import com.hbt.semillero.enums.TipoVehiculoEnum;
+import com.hbt.semillero.interfaces.AccionesVehiculoInterface;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public class Avion extends Vehiculo implements AccionesVehiculoInterface  {
+
+	@Override
+	public int obtenerValocidadMaxima() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Long obtenerPesoMaximoCarga() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean determinarTipoVehiculo(TipoVehiculoEnum tipoVehiculoEnum) throws Exception {
+
+if (tipoVehiculoEnum.AEREO.getIdentificador() == (tipoVehiculoEnum.getIdentificador())) {
+	
+System.out.println("El vehiculo es del mismo tipo");
+return true;
+}else {
+	throw new Exception("El tipo de vehiculo asignado es erroneo");
+}
+		
+	}
+
+	
+
+}

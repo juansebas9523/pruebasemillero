@@ -1,0 +1,31 @@
+import java.util.List;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.junit.Test;
+
+public class CreacionComicTest {
+	
+	private final static Logger LOG = Logger.getLogger(CreacionComicTest.class);
+	
+	@BeforeTest
+	public void nincializar() {
+		// inicia...
+		BasicConfigurator.configure();
+		LOG.info("::::::::::::::::: INICIAN PRUEBAAS :::::::::::::::::::::::");
+	}
+	
+	@Test
+	public void probarComic() {
+		
+	}
+	
+	private List<Comic> llenarDatos() {
+		
+		
+		
+	}
+	
+	
+
+}

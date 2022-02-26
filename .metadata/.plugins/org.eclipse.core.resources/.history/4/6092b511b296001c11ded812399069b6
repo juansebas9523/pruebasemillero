@@ -1,0 +1,87 @@
+/**
+ * Comic.java
+ */
+package com.hbt.semillero.entidades;
+
+import java.io.Serializable;
+import java.time.LocalDate;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import com.hbt.semillero.enums.TematicaEnum;
+
+/**
+ * <b>Descripción:<b> Entidad que contiene la informacion de la tabla comic de la bdd semillero
+ * <b>Caso de Uso:<b> SEMILLERO 2022
+ * @author Sebastian Sanchez
+ * @version 
+ */
+@Entity
+@Table(name = "COMIC")
+public class Comic implements Serializable{
+
+	/**
+	 * Atributo que determina  
+	 */
+	private static final long serialVersionUID = 1L;
+     
+	@Id // indica llave primaria de tabla comic
+	@Column(name = "SCID")
+	@SequenceGenerator(allocationSize=1, name="COMIC_SCID_GENERATOR", sequenceName="SEQ_COMIC")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "COMIC_SCIDGENERATOR")
+	private Long id;
+	
+	@Column(name = "SCNOMBRE", nullable = false, length = 50)
+	private String nombre;
+
+	@Column(name = "SCEDITORIAL")
+	private String editorial;
+
+	@Column(name = "SCTEMATICA")
+	@Enumerated(value = EnumType.STRING)
+	private TematicaEnum tematicaEnum;
+	
+	@Column(name = "SCCOLECCION")
+	private String coleccion;
+	
+	@Column(name = "SCNUMEROPAGINAS")
+	private Integer numeroPaginas;
+	
+	@Column(name = "SCPRECIO")
+	private Double precio;
+	
+	@Column(name = "SCAUTORES")
+	private String autor;
+	
+	@Column(name = "SCCOLOR")
+	private Boolean color;
+	
+	@Column(name = "SCFECHA_VENTA")
+	private LocalDate fechaVenta;
+
+	@Column(name = "SCESTADO")
+	@Enumerated(value = EnumType.STRING)
+	private EstadoComicEnum estado;
+	
+	@Column(name = "SCCANTIDAD")
+	private Long cantidad;
+
+	
+	
+	@Override
+	public String toString() {
+		return "Comic [id=" + id + ", nombre=" + nombre + ", editorial=" + editorial + ", tematicaEnum=" + tematicaEnum
+				+ ", coleccion=" + coleccion + ", numeroPaginas=" + numeroPaginas + ", precio=" + precio + ", autor="
+				+ autor + ", color=" + color + ", fechaVenta=" + fechaVenta + ", estado=" + estado + ", cantidad="
+				+ cantidad + "]";
+	}
+	
+}

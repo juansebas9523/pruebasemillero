@@ -1,0 +1,110 @@
+/**
+ * ComicDTO.java
+ */
+package com.hbt.semillero.dto;
+
+import java.time.LocalDate;
+
+import com.hbt.semillero.enums.TematicaEnum;
+
+/**
+ * <b>Descripción:<b> Clase que determina la informacion de un comic para transportar
+ * la data de este mismo
+ * <b>Caso de Uso:<b> SEMILLERO 2022
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public class ComicDTO {
+	/**
+	 * Atributo que determina  
+	 */
+	private static final long serialVersionUID = 1L;
+     
+	private long id;
+	private String nombre;
+	private String editorial;
+	private TematicaEnum tematicaEnum;
+	private String coleccion;
+	private Integer numeroPaginas;
+	private Long precio;
+	private String autor;
+	private Boolean color;
+	private LocalDate fechaVenta;
+	private String estado;
+	private Integer cantidad;
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getEditorial() {
+		return editorial;
+	}
+	public void setEditorial(String editorial) {
+		this.editorial = editorial;
+	}
+	public TematicaEnum getTematicaEnum() {
+		return tematicaEnum;
+	}
+	public void setTematicaEnum(TematicaEnum tematicaEnum) {
+		this.tematicaEnum = tematicaEnum;
+	}
+	public String getColeccion() {
+		return coleccion;
+	}
+	public void setColeccion(String coleccion) {
+		this.coleccion = coleccion;
+	}
+	public Integer getNumeroPaginas() {
+		return numeroPaginas;
+	}
+	public void setNumeroPaginas(Integer numeroPaginas) {
+		this.numeroPaginas = numeroPaginas;
+	}
+	public Long getPrecio() {
+		return precio;
+	}
+	public void setPrecio(Long precio) {
+		this.precio = precio;
+	}
+	public String getAutor() {
+		return autor;
+	}
+	public void setAutor(String autor) {
+		this.autor = autor;
+	}
+	public Boolean getColor() {
+		return color;
+	}
+	public void setColor(Boolean color) {
+		this.color = color;
+	}
+	public LocalDate getFechaVenta() {
+		return fechaVenta;
+	}
+	public void setFechaVenta(LocalDate fechaVenta) {
+		this.fechaVenta = fechaVenta;
+	}
+	public String getEstado() {
+		return estado;
+	}
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+	public Integer getCantidad() {
+		return cantidad;
+	}
+	public void setCantidad(Integer cantidad) {
+		this.cantidad = cantidad;
+	}
+	
+	
+}

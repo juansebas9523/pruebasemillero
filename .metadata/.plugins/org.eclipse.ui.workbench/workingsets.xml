@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1645844193728_0" label="Java Main Sources" name="Java Main Sources"/>
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1645844193744_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet editPageId="org.eclipse.ui.resourceWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1645844215630_3" label="semillero" name="semillero">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/semillero-hbt" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/semillero-padre" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/semillero-servicios" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/semillero-web" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/semillero-ear" type="4"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1645844194434_2" label="Conjunto de Trabajo de Ventana" name="Aggregate for window 1645844194434"/>
+</workingSetManager>

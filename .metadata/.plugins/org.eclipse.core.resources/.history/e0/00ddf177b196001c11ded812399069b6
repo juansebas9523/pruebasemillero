@@ -1,0 +1,58 @@
+/**
+ * SemilleroJPQLRest.java
+ */
+package com.hbt.semillero.rest;
+
+
+import org.apache.log4j.Logger;
+
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.ws.rs.GET;
+import javax.ws.rs.Path;
+import javax.ws.rs.Produces;
+import javax.ws.rs.core.MediaType;
+
+import com.hbt.semillero.entidades.Comic;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public class SemilleroJPQLRest {
+	
+	private final static Logger LOG = Logger.getLogger(SemilleroJPQLRest.class);
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	@GET
+	@Path("/test")
+	@Produces(MediaType.APPLICATION_JSON)
+	@TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
+	
+	
+	
+	
+	public String generarOperacionComic() {
+		Comic comic = null;
+		
+		try {
+			comic = em.find(Comic.class, 3L);
+		} catch (Exception e) {
+			LOG.info("DATA COMIC" + comic.toString());
+			
+			String consultaUnComic = "SELECT cm.nombre FROM Comic WHERE cm.ID = 3 ";
+			Query queryUnComic = em.createQuery(consultaUnComic);
+			comic = (Comic)queryUnComic.getSingleResult();
+			
+		}
+		
+		return "";
+	}
+}

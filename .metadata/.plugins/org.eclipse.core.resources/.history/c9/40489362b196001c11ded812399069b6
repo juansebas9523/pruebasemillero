@@ -1,0 +1,73 @@
+/**
+ * Barco.java
+ */
+package com.hbt.semillero.dto;
+
+import java.math.BigDecimal;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public class Barco extends Vehiculo{
+	
+	
+	private int numeroVelas;
+	private String nombreCapitan;
+	private String puertoLlegada;
+	/**
+	 * Metodo encargado de retornar el valor del atributo numeroVelas
+	 * @return El numeroVelas asociado a la clase
+	 */
+	public Barco () {
+		super(new BigDecimal(500));
+	}
+	
+	public int getNumeroVelas() {
+		return numeroVelas;
+	}
+	/**
+	 * Metodo encargado de retornar el valor del atributo nombreCapitan
+	 * @return El nombreCapitan asociado a la clase
+	 */
+	public String getNombreCapitan() {
+		return nombreCapitan;
+	}
+	/**
+	 * Metodo encargado de retornar el valor del atributo puertoLlegada
+	 * @return El puertoLlegada asociado a la clase
+	 */
+	public String getPuertoLlegada() {
+		return puertoLlegada;
+	}
+	/**
+	 * Metodo encargado de modificar el valor del atributo numeroVelas
+	 * @param numeroVelas El nuevo numeroVelas a modificar.
+	 */
+	public void setNumeroVelas(int numeroVelas) {
+		this.numeroVelas = numeroVelas;
+	}
+	/**
+	 * Metodo encargado de modificar el valor del atributo nombreCapitan
+	 * @param nombreCapitan El nuevo nombreCapitan a modificar.
+	 */
+	public void setNombreCapitan(String nombreCapitan) {
+		this.nombreCapitan = nombreCapitan;
+	}
+	/**
+	 * Metodo encargado de modificar el valor del atributo puertoLlegada
+	 * @param puertoLlegada El nuevo puertoLlegada a modificar.
+	 */
+	public void setPuertoLlegada(String puertoLlegada) {
+		this.puertoLlegada = puertoLlegada;
+	}
+
+	@Override
+	public String toString() {
+		return "Barco [numeroVelas=" + numeroVelas + ", nombreCapitan=" + nombreCapitan + ", puertoLlegada="
+				+ puertoLlegada + "]" + super.toString();
+	}
+
+}

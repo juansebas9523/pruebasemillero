@@ -1,0 +1,168 @@
+import java.util.ArrayList;
+import java.util.List;
+
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
+import org.junit.Test;
+
+import com.hbt.semillero.entidades.Comic;
+import com.hbt.semillero.enums.EstadoComicEnum;
+import com.hbt.semillero.enums.TematicaEnum;
+
+public class CreacionComicTest {
+	
+	private final static Logger LOG = Logger.getLogger(CreacionComicTest.class);
+	
+	@BeforeTest
+	public void nincializar() {
+		// inicia...
+		BasicConfigurator.configure();
+		LOG.info("::::::::::::::::: INICIAN PRUEBAAS :::::::::::::::::::::::");
+	}
+	
+	@Test
+	public void probarComic() {
+		
+	}
+	
+	private List<Comic> llenarDatos() {
+		
+		List<Comic> listaComics = new ArrayList<>();
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("la galaxia");
+		comic.setTematicaEnum(TematicaEnum.CIENCIA_FICCION);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.ACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("Gol de una");
+		comic.setTematicaEnum(TematicaEnum.DEPORTIVO);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.ACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("las guerras");
+		comic.setTematicaEnum(TematicaEnum.BELICO);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.ACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("los cuatro fantasticos");
+		comic.setTematicaEnum(TematicaEnum.FANTASTICO);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.ACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("Aventuras en pañales");
+		comic.setTematicaEnum(TematicaEnum.AVENTURAS);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.ACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("Casa del terror");
+		comic.setTematicaEnum(TematicaEnum.HORROR);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.INACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("Risas en un dia");
+		comic.setTematicaEnum(TematicaEnum.HUMORISTICO);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.INACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("La guerra del pacifico");
+		comic.setTematicaEnum(TematicaEnum.HISTORICO);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.INACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("perros pandilla");
+		comic.setTematicaEnum(TematicaEnum.CIENCIA_FICCION);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.INACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+		Comic comic = new Comic(); 
+		comic.setNombre("Unit test");
+		comic.setEditorial("Camino del terror");
+		comic.setTematicaEnum(TematicaEnum.HORROR);
+		comic.setColeccion("2001");
+		comic.setNumeroPaginas(85);
+		comic.setPrecio(97.124);
+		comic.setAutor("Juan Sebastian Sanchez F");
+		comic.setColor(true);
+		comic.setEstado(EstadoComicEnum.INACTIVO);
+		comic.setCantidad(52L);
+		listaComics.add(comic);	
+		
+	}
+		
+	}
+	
+	
+
+}

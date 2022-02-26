@@ -1,0 +1,53 @@
+/**
+ * CreacionVehiculoRest.java
+ */
+package com.hbt.semillero.dto;
+
+import java.math.BigDecimal;
+
+import com.hbt.semillero.enums.TipoVehiculoEnum;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public class CreacionVehiculoRest {
+
+	/**
+	 * Metodo encargado de 
+	 * <b>Caso de Uso</b>
+	 * @author Lenovo
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		
+		Vehiculo moto = new Vehiculo();
+		moto.setColor("negro");
+		moto.setModelo("enduro");
+		
+		Vehiculo moto2 =new Vehiculo("RX JS", TipoVehiculoEnum.TERRESTRE, 1.5, "Azul", 2, new BigDecimal(160000));
+		
+		Vehiculo moto3 = new Vehiculo(new BigDecimal(22000000));
+		
+		System.out.println("Informacion Moto 1: "+ moto.toString());
+		System.out.println("Informacion Moto 2: "+ moto2.toString());
+		System.out.println("Informacion Moto 3: "+ moto3.toString());
+		
+//		
+//		Barco barco1 = new Barco();
+//		barco1.setNumeroVelas(342);
+//		barco1.setColor("MORADO");
+//		barco1.setTipo(TipoVehiculoEnum.ACUATICO);
+//		
+//		System.out.println("Caracteristicas del barco: El tipo de vehiculo es: "+barco1.getTipo()+" El precio del barco es: "+barco1.getPrecio());
+//		
+//		System.out.println("**************** BARCO TO STRING USANDO EL SUPER ************ "+barco1.toString());
+//		
+		Avion avion1 = new Avion();
+		avion1.acelerar();
+	}
+
+}

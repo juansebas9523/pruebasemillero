@@ -1,0 +1,9 @@
+package com.hbt.semillero.enums;
+
+public enum EstadoComicEnum {
+	
+	ACTIVO("codigo.comic.activo"),
+	
+	INACTIVO("codigo.comic.inactivo");
+
+}

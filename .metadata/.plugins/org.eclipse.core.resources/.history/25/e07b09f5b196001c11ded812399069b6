@@ -1,0 +1,29 @@
+package com.hbt.semillero.enums;
+
+public enum EstadoComicEnum {
+	
+	ACTIVO("codigo.comic.activo"),
+	
+	INACTIVO("codigo.comic.inactivo");
+	
+	private String codigoMensaje;
+	
+	EstadoComicEnum(String codigoMensaje) {
+		this.codigoMensaje = codigoMensaje;
+	}
+
+	/**
+	 * @return el codigoMensaje
+	 */
+	public String getCodigoMensaje() {
+		return codigoMensaje;
+	}
+
+	/**
+	 * @param codigoMensaje el codigoMensaje a establecer
+	 */
+	public void setCodigoMensaje(String codigoMensaje) {
+		this.codigoMensaje = codigoMensaje;
+	}
+
+}

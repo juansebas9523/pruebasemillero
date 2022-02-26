@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\Users\LENOVO\Desktop\repositorio\pruebasemillero\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+380737801.index
+1451515133.index
+1906552322.index
+3707609680.index
+3492903134.index
+874974770.index

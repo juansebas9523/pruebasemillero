@@ -1,0 +1,28 @@
+/**
+ * AccionesVehiculoInterface.java
+ */
+package com.hbt.semillero.interfaces;
+
+import com.hbt.semillero.enums.TipoVehiculoEnum;
+
+/**
+ * <b>Descripción:<b> Clase que determina
+ * <b>Caso de Uso:<b> 
+ * @author Jose Luis Contreras Romero
+ * @version 
+ */
+public interface AccionesVehiculoInterface {
+
+	
+		public  int obtenerValocidadMaxima();
+		public  Long obtenerPesoMaximoCarga();
+		public  boolean determinarTipoVehiculo(TipoVehiculoEnum tipoVehiculoEnum) throws Exception ;
+		
+		public default void acelerar() {
+			System.out.println("vehiculo acelrando");
+		
+	
+
+	
+}
+}
